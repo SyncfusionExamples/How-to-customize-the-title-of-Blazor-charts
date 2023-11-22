@@ -1,0 +1,31 @@
+﻿@page "/"
+
+@using Syncfusion.Blazor.Charts
+
+<SfChart Width="500px" Title="Medal details">
+    <ChartPrimaryXAxis ValueType="Syncfusion.Blazor.Charts.ValueType.Category" />
+    <ChartTitleStyle TextOverflow="TextOverflow.Wrap" TextAlignment="Alignment.Far" Color="blue" FontFamily="Helvetica"></ChartTitleStyle>
+    <ChartSeriesCollection>
+        <ChartSeries DataSource="@MedalDetails" XName="X" YName="Y" Type="ChartSeriesType.Column">
+        </ChartSeries>
+    </ChartSeriesCollection>
+</SfChart>
+
+@code {
+    public class ChartData
+    {
+        public string X { get; set; }
+        public double Y { get; set; }
+    }
+
+    public List<ChartData> MedalDetails = new List<ChartData>
+    {
+        new ChartData { X= "South Korea", Y= 39.4 },
+        new ChartData { X= "India", Y= 61.3 },
+        new ChartData { X= "Pakistan", Y= 20.4 },
+        new ChartData { X= "Germany", Y= 65.1 },
+        new ChartData { X= "Australia", Y= 15.8 },
+        new ChartData { X= "Italy", Y= 29.2 },
+    };
+}
+
