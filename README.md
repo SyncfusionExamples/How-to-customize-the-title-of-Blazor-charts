@@ -2,13 +2,13 @@
 
 This article explains how to customize the title of blazor chart.
 
-**Chart title color and alignment customization**
+**Chart title color and alignment customization in Blazor chart**
 
-[Blazor chart's](https://www.syncfusion.com/blazor-components/blazor-charts) provides the support to cuatomize the title and its alignment changes. We can customize the text alignment, font color, font family by using the ChartTitleStyle.
+[Blazor Chart](https://www.syncfusion.com/blazor-components/blazor-charts) provides support for customizing the title and its alignment changes. We can customize text alignment, font color, and font family using the [ChartTitleStyle](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Charts.ChartTitleStyle.html#Syncfusion_Blazor_Charts_ChartTitleStyle__ctor).
 
 The following code example illustrates this.
 
-**C#**
+**Index.razor**
 
 ```cshtml
 
@@ -17,7 +17,9 @@ The following code example illustrates this.
 <SfChart Width="500px" Title="Medal details">
 
     <ChartPrimaryXAxis ValueType="Syncfusion.Blazor.Charts.ValueType.Category" />
+
     <ChartTitleStyle TextOverflow="TextOverflow.Wrap" TextAlignment="Alignment.Far" Color="blue" FontFamily="Helvetica"></ChartTitleStyle>
+
     <ChartSeriesCollection>
         <ChartSeries DataSource="@MedalDetails" XName="X" YName="Y" Type="ChartSeriesType.Column">
         </ChartSeries>
@@ -46,7 +48,7 @@ The following code example illustrates this.
 
 ```
 
-The following screenshot illustrate the output of the above code snippet.
+The following screenshot illustrates the output of the above code snippet.
 
 **Output:**
 
