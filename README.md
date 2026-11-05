@@ -40,7 +40,9 @@ dotnet run
 
 Open the URL displayed in the terminal after the application starts.
 
-**Chart title color and alignment customization in Blazor chart**
+## Sample code
+
+**Chart title color and alignment customization in Blazor chart**:
 
 [Blazor Chart](https://www.syncfusion.com/blazor-components/blazor-charts) provides support for customizing the title and its alignment changes. We can customize text alignment, font color, and font family using the [ChartTitleStyle](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Charts.ChartTitleStyle.html#Syncfusion_Blazor_Charts_ChartTitleStyle__ctor).
 
